@@ -1,0 +1,7 @@
+https://www.w3schools.com/colors/colors_monochromatic.asp
+
+Colours used for what the app could be
+
+----------------------------------------------------------------------
+
+Don't forget to check what credentials will be used in the login system, usernames might not be needed for example
