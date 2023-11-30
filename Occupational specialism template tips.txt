@@ -10,3 +10,21 @@ Don't forget to check what credentials will be used in the login system, usernam
 User/Customer ID will have to be changed to integer whenever used globally
 
 Check what database you're connected too, ESPECIALLY if you're using Bean and brew code, most table names will be same so might try looking for column that doesn't exist in a table that does but isn't relevant
+
+
+
+Parse SQL statements wherever you can, example for outputting name into a text box being parsed seen below
+                                        |
+                                        |
+                                        |
+                                        \/
+
+string userNameFind = "SELECT firstName, lastName FROM customers WHERE customerID = @customerId";
+            MySqlCommand cmd = new MySqlCommand(userNameFind, conn);
+            cmd.Parameters.AddWithValue("@customerId", int.Parse(customerID));
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            if (rdr.Read())
+            {
+                txtBlockWelcome.Text = $"Hello {rdr.GetString(0)} {rdr.GetString(1)}";
+            }
+            conn.Close();
