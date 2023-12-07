@@ -2,16 +2,16 @@ https://www.w3schools.com/colors/colors_monochromatic.asp
 
 Colours used for what the app could be
 
-----------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 Don't forget to check what credentials will be used in the login system, usernames might not be needed for example
-
 
 User/Customer ID will have to be changed to integer whenever used globally
 
 Check what database you're connected too, ESPECIALLY if you're using Bean and brew code, most table names will be same so might try looking for column that doesn't exist in a table that does but isn't relevant
 
 
+-----------------------------------------------------------------------------------------------------------------------------
 
 Parse SQL statements wherever you can, example for outputting name into a text box being parsed seen below
                                         |
@@ -28,3 +28,33 @@ string userNameFind = "SELECT firstName, lastName FROM customers WHERE customerI
                 txtBlockWelcome.Text = $"Hello {rdr.GetString(0)} {rdr.GetString(1)}";
             }
             conn.Close();
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+SQL create statement for customers, change "customers" for "user" if suits program better. Columns such as username may be added too, email could be scrapped as well.
+
+CREATE TABLE `customers` (
+  `customerID` int NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(25) DEFAULT NULL,
+  `lastName` varchar(25) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`customerID`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+SQL create statement for orders, not going to fit into many contexts but shows implementation of foreign keys.
+
+CREATE TABLE `orders` (
+  `OrderID` int NOT NULL AUTO_INCREMENT,
+  `CustomerID` int DEFAULT NULL,
+  `OrderDate` date DEFAULT NULL,
+  PRIMARY KEY (`OrderID`),
+  KEY `CustomerID` (`CustomerID`),
+  CONSTRAINT `order_ibfk_1` FOREIGN KEY (`CustomerID`) REFERENCES `customers` (`customerID`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
