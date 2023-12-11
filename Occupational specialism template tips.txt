@@ -10,6 +10,8 @@ User/Customer ID will have to be changed to integer whenever used globally
 
 Check what database you're connected too, ESPECIALLY if you're using Bean and brew code, most table names will be same so might try looking for column that doesn't exist in a table that does but isn't relevant
 
+Hash passwords wherever you can, templates should account for it but it also can be a pretty explainable issue if you encounter it
+
 
 -----------------------------------------------------------------------------------------------------------------------------
 
