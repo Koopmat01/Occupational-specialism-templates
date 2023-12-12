@@ -2,22 +2,28 @@ https://www.w3schools.com/colors/colors_monochromatic.asp
 
 Colours used for what the app could be
 
+https://lucid.app/lucidchart/50b99521-be84-48da-a854-24e1662ed9a6/edit?invitationId=inv_d5b1c49e-f9fc-4224-b28c-9079ef791624&page=0_0#
+
+Lucid chart, idk if it'll be needed at this stage though
+
 -------------------------------------------------------------------------------------------------------------------------------
 
 Don't forget to check what credentials will be used in the login system, usernames might not be needed for example
 
-User/Customer ID will have to be changed to integer whenever used globally
+User/Customer ID will have to be changed to integer whenever used globally - Only applicable if taking straight from BnB
 
-Check what database you're connected too, ESPECIALLY if you're using Bean and brew code, most table names will be same so might try looking for column that doesn't exist in a table that does but isn't relevant
+Check what database you're connected too, most table names will be same so might try looking for column that doesn't exist in a table that does but isn't relevant
 
 Hash passwords wherever you can, templates should account for it but it also can be a pretty explainable issue if you encounter it
 
-Clear whatever comments are on the code pulled from the templates
+Clear whatever comments are on the code pulled from the templates, "Replace with schema name for example"
+
+It's fine to use K1J and Bean n' brew as a "complete" version of occupational specialism but remember they're not up to date, BnB doesn't have paremeters or hashing, K1J was kinda rushed so probably will be missing some things
 
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-Parse SQL statements wherever you can, example for outputting name into a text box being parsed seen below
+Paramatise SQL statements wherever you can, example for outputting name into a text box being parsed seen below, integer parsing is also shown here if needed
                                         |
                                         |
                                         |
