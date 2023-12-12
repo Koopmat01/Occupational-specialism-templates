@@ -12,6 +12,8 @@ Check what database you're connected too, ESPECIALLY if you're using Bean and br
 
 Hash passwords wherever you can, templates should account for it but it also can be a pretty explainable issue if you encounter it
 
+Clear whatever comments are on the code pulled from the templates
+
 
 -----------------------------------------------------------------------------------------------------------------------------
 
