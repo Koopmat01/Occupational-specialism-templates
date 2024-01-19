@@ -20,6 +20,7 @@ Clear whatever comments are on the code pulled from the templates, "Replace with
 
 It's fine to use K1J and Bean n' brew as a "complete" version of occupational specialism but remember they're not up to date, BnB doesn't have paremeters or hashing, K1J was kinda rushed so probably will be missing some things
 
+For SQL tables that won't be edited such as one that might have locations it's ok to use strings for primary keys
 
 -----------------------------------------------------------------------------------------------------------------------------
 
