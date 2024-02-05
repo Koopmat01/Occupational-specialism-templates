@@ -24,6 +24,8 @@ For SQL tables that won't be edited such as one that might have locations it's o
 
 This line missing will be what is gonna cause SQL issues in the main window, don't forget it - using MySql.Data.MySqlClient;
 
+Make sure that the password column in the SQL is character length 255, means it can be hashed properly
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Paramatise SQL statements wherever you can, example for outputting name into a text box being parsed seen below, integer parsing is also shown here if needed
