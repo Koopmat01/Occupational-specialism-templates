@@ -50,6 +50,7 @@ CREATE TABLE `users` (
   `userID` int NOT NULL AUTO_INCREMENT,
   `firstName` varchar(25) DEFAULT NULL,
   `lastName` varchar(25) DEFAULT NULL,
+  `username` varchar(25) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`userID`)
