@@ -44,15 +44,15 @@ string userNameFind = "SELECT firstName, lastName FROM customers WHERE customerI
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-SQL create statement for customers, change "customers" for "user" if suits program better. Columns such as username may be added too, email could be scrapped as well.
+SQL create statement for users, change "users" for "customer" if suits program better. Columns such as username may be added too, email could be scrapped as well.
 
-CREATE TABLE `customers` (
-  `customerID` int NOT NULL AUTO_INCREMENT,
+CREATE TABLE `users` (
+  `userID` int NOT NULL AUTO_INCREMENT,
   `firstName` varchar(25) DEFAULT NULL,
   `lastName` varchar(25) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`customerID`)
+  PRIMARY KEY (`userID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
 -----------------------------------------------------------------------------------------------------------------------------
